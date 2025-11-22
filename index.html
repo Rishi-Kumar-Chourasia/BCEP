@@ -192,7 +192,7 @@
               <div class="club-card">BMSCE IEEE PES & Sensors Council</div>
             </div>
             <div class="club-card-container">
-              <div class="club-card">BMSCE IEEE SB Student Branch</div>
+              <div class="club-card">BMSCE IEEE Student Branch</div>
             </div>
             <div class="club-card-container">
               <div class="club-card">BMSCE IEEE WIE</div>
@@ -328,6 +328,11 @@
             wrapper.appendChild(card);
             container.appendChild(wrapper);
           });
+
+          if (vanta && vanta.resize) {
+            console.log("Resizing Vanta after events loaded.");
+            vanta.resize();
+          }
         } catch (err) {
           console.error("Error loading events:", err);
         }
