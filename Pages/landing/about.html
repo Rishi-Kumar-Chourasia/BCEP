@@ -3,47 +3,384 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BCEP | About</title>
+    <title>About - BMSCE Club Events</title>
     <link rel="icon" type="image/png" href="../../Data/Images/logo.png" />
-
     <link rel="stylesheet" href="about.css" />
   </head>
 
   <body>
-    <main>
-      <div class="nav-container">
-        <nav>
-          <div class="nav-left">
-            <a href="landing.html">
-              <img src="../../Data/Images/logo.png" alt="Logo" class="logo"
-            /></a>
+    <div id="vanta-bg"></div>
+
+    <nav>
+      <div class="nav-left">
+        <a href="index.html">
+          <img
+            src="Data/Images/logo.png"
+            onerror="this.src='https://via.placeholder.com/40'"
+            alt="Logo"
+            class="logo"
+          />
+        </a>
+      </div>
+      <div class="nav-right">
+        <a href="../../index.html">Home</a>
+      </div>
+    </nav>
+
+    <section class="about-header">
+      <h1>Behind BMSCE Events</h1>
+      <p>
+        Exploring the full-stack architecture, security protocols, and creative
+        technologies powering our campus event portal.
+      </p>
+    </section>
+    <section class="master-wrapper">
+      <section class="tech-marquee-section">
+        <div class="marquee-container">
+          <div class="marquee-track">
+            <div class="tech-card">
+              <i class="fa-brands fa-html5"></i>
+              <div class="tech-info">
+                <h4>HTML5 Structure</h4>
+                <p>
+                  The semantic backbone of our portal, providing the accessible
+                  skeleton for both Student and Moderator dashboards. It ensures
+                  a clean hierarchy for our forms, tables, and event modal
+                  displays.
+                </p>
+              </div>
+            </div>
+
+            <div class="tech-card">
+              <i class="fa-brands fa-css3-alt"></i>
+              <div class="tech-info">
+                <h4>Advanced CSS3</h4>
+                <p>
+                  Powers our visual identity using Glassmorphism effects,
+                  complex gradients, and flexbox/grid layouts. It handles the
+                  responsive design that adapts our "infinite slider" and cards
+                  to mobile screens.
+                </p>
+              </div>
+            </div>
+
+            <div class="tech-card">
+              <i class="fa-brands fa-js"></i>
+              <div class="tech-info">
+                <h4>Vanilla JavaScript</h4>
+                <p>
+                  Drives all client-side interactivity without heavy framework
+                  overhead. It manages asynchronous API fetch calls, dynamic DOM
+                  updates for filters, and the real-time typewriter effects.
+                </p>
+              </div>
+            </div>
+
+            <div class="tech-card">
+              <i class="fa-brands fa-node"></i>
+              <div class="tech-info">
+                <h4>Node.js Runtime</h4>
+                <p>
+                  The high-performance, event-driven environment executing our
+                  backend code. It efficiently handles concurrent connections
+                  during peak registration times, ensuring the server never
+                  hangs.
+                </p>
+              </div>
+            </div>
+
+            <div class="tech-card">
+              <i class="fa-solid fa-server"></i>
+              <div class="tech-info">
+                <h4>Express Framework</h4>
+                <p>
+                  Streamlines our backend routing and middleware integration. It
+                  securely manages API endpoints for authentication, event CRUD
+                  operations, and student profile retrieval.
+                </p>
+              </div>
+            </div>
+
+            <div class="tech-card">
+              <i class="fa-solid fa-database"></i>
+              <div class="tech-info">
+                <h4>MongoDB Atlas</h4>
+                <p>
+                  Our scalable NoSQL database storing complex data structures.
+                  It maintains collections for Users, Events, and Clubs,
+                  enabling fast queries for filtering events by date or
+                  category.
+                </p>
+              </div>
+            </div>
+
+            <div class="tech-card">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="tech-info">
+                <h4>SMTP / Nodemailer</h4>
+                <p>
+                  The engine behind our communication system. It handles the
+                  secure delivery of OTPs for account verification and sends
+                  automated confirmation emails upon successful event
+                  registration.
+                </p>
+              </div>
+            </div>
+
+            <div class="tech-card">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div class="tech-info">
+                <h4>JWT Auth</h4>
+                <p>
+                  JSON Web Tokens provide stateless, secure authentication. They
+                  maintain user sessions across page reloads and protect
+                  sensitive Moderator routes from unauthorized student access.
+                </p>
+              </div>
+            </div>
+
+            <div class="tech-card">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <div class="tech-info">
+                <h4>Vanta.js / Three.js</h4>
+                <p>
+                  Leverages WebGL to render the immersive, interactive
+                  backgrounds (like the Fog and Net effects) you see across the
+                  site, adding a modern aesthetic layer to the user experience.
+                </p>
+              </div>
+            </div>
+
+            <div class="tech-card">
+              <i class="fa-solid fa-network-wired"></i>
+              <div class="tech-info">
+                <h4>Ngrok Tunneling</h4>
+                <p>
+                  Used in our development pipeline to securely expose our local
+                  backend to the internet, facilitating the testing of webhooks
+                  and external API integrations in real-time.
+                </p>
+              </div>
+            </div>
+
+            <div class="tech-card">
+              <i class="fa-brands fa-git-alt"></i>
+              <div class="tech-info">
+                <h4>Git Version Control</h4>
+                <p>
+                  Tracks every line of code, enabling modular development and
+                  safe rollbacks. It allows our team to collaborate seamlessly
+                  on different features like the dashboard and login systems.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="nav-right">
-            <a href="../../index.html">Home</a>
+        </div>
+      </section>
+
+      <div class="features-container" id="featuresContainer">
+        <div class="feature-section card-stack">
+          <div class="collage-wrapper">
+            <div class="collage-card span-2-col">
+              <span class="number">01</span>
+              <i class="fa-solid fa-sitemap icon-top"></i>
+              <h3>System Architecture</h3>
+              <p>
+                Designed as a centralized hub bridging Students and Club
+                Moderators. The architecture separates concerns, ensuring that
+                admin capabilities are strictly isolated from the general
+                student interface.
+              </p>
+            </div>
+            <div class="collage-card span-1">
+              <i class="fa-solid fa-lock icon-top"></i>
+              <h3>Security First</h3>
+              <p>
+                Utilizing Bcrypt for password hashing and sanitized inputs to
+                prevent injection attacks.
+              </p>
+            </div>
+
+            <div class="collage-card span-1">
+              <i class="fa-solid fa-database icon-top"></i>
+              <h3>Optimized Data</h3>
+              <p>
+                Efficient MongoDB aggregations for fast loading even with large
+                event lists.
+              </p>
+            </div>
+            <div class="collage-card span-1">
+              <i class="fa-brands fa-git-alt icon-top"></i>
+              <h3>CI/CD Pipeline</h3>
+              <p>Automated workflows ensure code quality before deployment.</p>
+            </div>
+            <div class="collage-card span-1">
+              <i class="fa-solid fa-server icon-top"></i>
+              <h3>Robust API</h3>
+              <p>
+                Custom REST endpoints handling everything from Login to Profile
+                updates.
+              </p>
+            </div>
           </div>
-        </nav>
+        </div>
+
+        <div class="feature-section card-stack">
+          <div class="collage-wrapper">
+            <div class="collage-card span-1">
+              <span class="number">02</span>
+              <i class="fa-solid fa-user-tie icon-top"></i>
+              <h3>Moderator Hub</h3>
+              <p>
+                A powerful dashboard giving Club Leads control over their event
+                lifecycle.
+              </p>
+            </div>
+            <div class="collage-card span-2-col">
+              <i class="fa-solid fa-chart-line icon-top"></i>
+              <h3>Live Analytics & Management</h3>
+              <p>
+                Moderators can track registration counts in real-time, view
+                detailed student data (USN, Branch), and trigger status emails
+                to keep participants informed.
+              </p>
+              <div class="code-snippet">
+                { "event_id": "ev_102", "reg_count": 150, "status": "OPEN" }
+              </div>
+            </div>
+
+            <div class="collage-card span-1">
+              <i class="fa-solid fa-pen-to-square icon-top"></i>
+              <h3>Event Creator</h3>
+              <p>Intuitive forms with file upload support for Event Posters.</p>
+            </div>
+            <div class="collage-card span-1">
+              <i class="fa-solid fa-envelope-open-text icon-top"></i>
+              <h3>Broadcast</h3>
+              <p>One-click email notifications to all registered attendees.</p>
+            </div>
+            <div class="collage-card span-1">
+              <i class="fa-solid fa-file-csv icon-top"></i>
+              <h3>Export Data</h3>
+              <p>Download comprehensive registration lists as CSV files.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-section card-stack">
+          <div class="collage-wrapper">
+            <div class="collage-card span-2-col">
+              <span class="number">03</span>
+              <i class="fa-solid fa-mobile-screen icon-top"></i>
+              <h3>Student Experience</h3>
+              <p>
+                A seamless, mobile-first interface allowing students to browse
+                events, check conflicting deadlines, and register instantly
+                without repetitive form filling.
+              </p>
+            </div>
+            <div class="collage-card span-1">
+              <i class="fa-solid fa-filter icon-top"></i>
+              <h3>Smart Filters</h3>
+              <p>Instantly sort events by Date, Club Category, or Keywords.</p>
+            </div>
+
+            <div class="collage-card span-1">
+              <i class="fa-solid fa-bell icon-top"></i>
+              <h3>Interactive UI</h3>
+              <p>Engaging typewriter text and hover effects for better UX.</p>
+            </div>
+            <div class="collage-card span-1">
+              <i class="fa-solid fa-image icon-top"></i>
+              <h3>Visual Gallery</h3>
+              <p>
+                Infinite scrolling sliders showcasing past event highlights.
+              </p>
+            </div>
+            <div class="collage-card span-1">
+              <i class="fa-solid fa-id-card icon-top"></i>
+              <h3>My Profile</h3>
+              <p>
+                A personal space to track registered history and user details.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="card">
-        <h1>About BMSCE Events</h1>
-        <p>
-          BMSCE Events is an integrated event management platform developed to
-          enhance communication and coordination between students and club
-          moderators of BMS College of Engineering. The portal enables students
-          to seamlessly discover and register for various club activities,
-          technical workshops, and cultural events, while providing authorized
-          club representatives with an efficient interface to post, manage, and
-          monitor their events. By centralizing event information and
-          registrations, BMSCE Events aims to foster active student
-          participation, streamline organizational processes, and strengthen the
-          collaborative spirit within the BMSCE community.
-        </p>
-      </div>
-    </main>
+      <section class="developer-contact">
+        <h2>Developed By</h2>
+        <div class="dev-grid">
+          <div class="dev-card">
+            <div class="dev-avatar">
+              <img
+                src="https://m.gettywallpapers.com/wp-content/uploads/2023/07/Megumi-Fushiguro-Pfp-for-instagram.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Rishi Kumar Chourasia</h3>
+            <p class="role">Team Leader, UI, Backend, Database</p>
+            <div class="dev-socials">
+              <a href="https://github.com/notrishi-1"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="mailto:rishikumar.cs24@bmsce.ac.in"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="dev-card">
+            <div class="dev-avatar">
+              <img
+                src="https://i.pinimg.com/1200x/6e/16/1d/6e161d3711b1984c5a753109adf826d1.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Team Member</h3>
+            <p class="role">Frontend Engineer</p>
+            <div class="dev-socials">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="dev-card">
+            <div class="dev-avatar">
+              <img
+                src="https://i.pinimg.com/1200x/be/b2/88/beb28889996baacfe88cbcd461cd04b3.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Team Member</h3>
+            <p class="role">Backend Engineer</p>
+            <div class="dev-socials">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="dev-card">
+            <div class="dev-avatar">
+              <img
+                src="https://lovephotodp.in/wp-content/uploads/2025/09/aethetics-cool-anime-dp-for-boy-hd.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Team Member</h3>
+            <p class="role">UI/UX Designer</p>
+            <div class="dev-socials">
+              <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+              <a href="#"><i class="fa-brands fa-behance"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
 
     <footer class="footer">
       <div class="footer-header">
-        <img src="../../Data/Images/logo.png" alt="Logo" />
+        <img src="Data/Images/logo.png" alt="Logo" />
         <p>BMSCE Club Events</p>
       </div>
       <p>
@@ -52,23 +389,82 @@
       </p>
       <p class="copyright">© 2025 BMSCE Club Events. All rights reserved.</p>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
 
     <script>
-      VANTA.FOG({
-        el: "body",
+      document.addEventListener("DOMContentLoaded", () => {
+        const stacks = document.querySelectorAll(".card-stack");
+
+        window.addEventListener("scroll", () => {
+          stacks.forEach((stack, index) => {
+            const rect = stack.getBoundingClientRect();
+            const nextStack = stacks[index + 1];
+
+            if (nextStack) {
+              const nextRect = nextStack.getBoundingClientRect();
+              const windowHeight = window.innerHeight;
+
+              if (nextRect.top < windowHeight && nextRect.top > 0) {
+                let progress = 1 - nextRect.top / windowHeight;
+                let opacity = 1 - progress * 1.5;
+                let scale = 1 - progress * 0.1;
+
+                if (opacity < 0) opacity = 0;
+
+                stack.style.opacity = opacity;
+                stack.style.transform = `scale(${scale})`;
+              } else if (nextRect.top <= 0) {
+                stack.style.opacity = 0;
+              } else {
+                stack.style.opacity = 1;
+                stack.style.transform = `scale(1)`;
+              }
+            } else {
+              const devSection = document.querySelector(".developer-contact");
+              if (devSection) {
+                const devRect = devSection.getBoundingClientRect();
+                if (devRect.top < window.innerHeight) {
+                  let progress = 1 - devRect.top / window.innerHeight;
+                  let opacity = 1 - progress * 1.5;
+                  let scale = 1 - progress * 0.1;
+                  if (opacity < 0) opacity = 0;
+                  stack.style.opacity = opacity;
+                  stack.style.transform = `scale(${scale})`;
+                }
+              }
+            }
+          });
+        });
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.fog.min.js"></script>
+
+    <script>
+      let vantaEffect = VANTA.FOG({
+        el: "#vanta-bg",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
         minHeight: 200.0,
         minWidth: 200.0,
         highlightColor: 0x0,
-        midtoneColor: 0x2c1c00,
-        lowlightColor: 0x14bced,
+        midtoneColor: 0x68b6,
+        lowlightColor: 0xfcb61a,
         baseColor: 0x0,
-        speed: 3.0,
-        zoom: 3.0,
+        speed: 2.0,
+        zoom: 1.0,
+      });
+
+      window.addEventListener("load", () => {
+        if (vantaEffect && vantaEffect.resize) vantaEffect.resize();
+        setTimeout(
+          () => vantaEffect && vantaEffect.resize && vantaEffect.resize(),
+          300
+        );
+      });
+      window.addEventListener("resize", () => {
+        if (vantaEffect && vantaEffect.resize) vantaEffect.resize();
       });
     </script>
   </body>
