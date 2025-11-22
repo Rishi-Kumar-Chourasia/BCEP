@@ -124,7 +124,8 @@
 }
 
 #vanta-bg {
-  height: 100%;
+  width: 100%;
+  min-height: 100vh;
 }
 
 html,
@@ -133,6 +134,7 @@ body {
   overflow-x: hidden;
   background-color: black;
   font-family: "Poppins", sans-serif;
+  min-height: 100vh;
 }
 
 a {
@@ -506,7 +508,6 @@ nav:hover {
 
 .event-card {
   position: relative;
-  /* overflow: hidden; */
 }
 
 .event-card-wrapper {
@@ -701,34 +702,26 @@ nav:hover {
   }
 }
 
-/* --- LAPTOP & TABLET (1200px and below) --- */
 @media (max-width: 1200px) {
-  /* 1. Drop the massive Desktop Margin */
   .events-scroll {
-    padding: 20px 40px 60px 40px; /* Reduced from 170px to 40px */
+    padding: 20px 40px 60px 40px;
     width: 100%;
 
-    /* 2. Make cards "go down" (Wrap automatically) */
     display: grid;
-    /* This makes them stack: if there isn't space for 250px, it wraps to next line */
+
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
   }
 
-  /* 3. IMPORTANT: Hide the floating poster in this mode. 
-     Since we removed the left padding, there is no room for the 
-     poster to float left (-160px) without going off-screen. */
   .poster-float {
     display: none !important;
   }
 
-  /* Remove the hover effect that looks for the poster */
   .event-card-wrapper:hover .poster-float {
     display: none !important;
   }
 }
 
-/* --- MOBILE LANDSCAPE / LARGE PHONE (768px and below) --- */
 @media (max-width: 768px) {
   nav {
     width: 94%;
@@ -751,9 +744,8 @@ nav:hover {
   }
 
   .events-scroll {
-    /* Minimal padding for mobile */
     padding: 10px 20px 40px 20px;
-    /* Smaller cards for mobile screens */
+
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1.5rem;
   }
@@ -763,17 +755,14 @@ nav:hover {
   }
 
   .event-info {
-    /* Optional: limit text on smaller screens to keep cards same height */
     -webkit-line-clamp: 3;
   }
 }
 
-/* --- SMALL MOBILE (480px and below) --- */
 @media (max-width: 480px) {
   .events-scroll {
-    /* This matches your request to behave like 480px */
     padding: 10px 15px 60px 15px;
-    /* Forces 1 column on very narrow phones, 2 on wider phones */
+
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1rem;
   }
