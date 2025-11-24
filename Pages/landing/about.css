@@ -70,6 +70,23 @@ body {
   min-height: 100vh;
   color: white;
 }
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar :horizontal {
+  height: 1px;
+  width: 1px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+::-webkit-scrollbar-thumb {
+  background: cyan;
+  border-radius: 1px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 a {
   text-decoration: none;
@@ -217,7 +234,6 @@ nav::after {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 80px;
   position: relative;
   z-index: 2;
 }
@@ -526,12 +542,13 @@ nav::after {
 }
 
 .tech-card {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.25);
+  /* font-size: 10; */
 
   display: flex;
   flex-direction: column;
@@ -567,13 +584,13 @@ nav::after {
 }
 
 .tech-info h4 {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 8px;
   font-weight: 600;
 }
 
 .tech-info p {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.35;
   opacity: 0.9;
 }
